@@ -15,7 +15,7 @@ WORDPRESS_API_URL = 'https://public-api.wordpress.com/rest/v1/sites/{0}'.format(
 
 #RSS Feed Integration: (by default use Tumblr rss feed)
 RSS_FEED_ENABLED = True
-RSS_FEED_URL = 'http://{0}/rss'.format(TUMBLR_BLOG_URL)
+RSS_FEED_URL = 'http://{0}/feed/'.format(WORDPRESS_BLOG_URL)
 
 #Twitter Integration
 TWITTER_INTEGRATION_ENABLED = True
@@ -131,6 +131,6 @@ if DEPLOYMENT_MODE == 'dev':
     DEBUG = True
 else:
     DEBUG = False
-    SITE_ROOT_URI = 'http://Jason.Green.cx/'
+    SITE_ROOT_URI = 'http://limitless-island-2628.herokuapp.com/'
 
 MEDIA_URL = SITE_ROOT_URI + 'static/'
