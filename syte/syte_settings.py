@@ -131,7 +131,7 @@ if DEPLOYMENT_MODE == 'dev':
     SITE_ROOT_URI = 'http://127.0.0.1:8000/'
     DEBUG = True
 else:
-    DEBUG = True
+    DEBUG = False
     SITE_ROOT_URI = 'http://limitless-island-2628.herokuapp.com/'
 
 MEDIA_URL = SITE_ROOT_URI + 'static/'
