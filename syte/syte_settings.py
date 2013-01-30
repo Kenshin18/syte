@@ -11,7 +11,8 @@ TUMBLR_API_KEY = '[ENTER TUMBLR API KEY HERE, SEE TUMBLR SETUP INSTRUCTIONS]'
 
 #Blog Integration: Wordpress
 WORDPRESS_BLOG_URL = 'http://greenthe.me'
-WORDPRESS_API_URL = 'https://public-api.wordpress.com/rest/v1/sites/{0}'.format(WORDPRESS_BLOG_URL)
+WORDPRESS_API_URL = 'https://public-api.wordpress.com/rest/v1/sites/greenthe.me'
+#.format(WORDPRESS_BLOG_URL)
 
 #RSS Feed Integration: (by default use Tumblr rss feed)
 RSS_FEED_ENABLED = True
@@ -62,12 +63,12 @@ INSTAGRAM_OAUTH_ACCESS_TOKEN_URL = 'https://api.instagram.com/oauth/access_token
 
 
 #Foursquare Integration
-FOURSQUARE_INTEGRATION_ENABLED = False
+FOURSQUARE_INTEGRATION_ENABLED = True
 FOURSQUARE_API_URL = 'https://api.foursquare.com/v2/'
 FOURSQUARE_ACCESS_TOKEN = '[ENTER FOURSQUARE ACCESS TOKEN HERE, SEE FOURSQUARE SETUP INSTRUCTIONS]'
 FOURSQUARE_SHOW_CURRENT_DAY = True
 
-FOURSQUARE_OAUTH_ENABLED = False
+FOURSQUARE_OAUTH_ENABLED = True
 FOURSQUARE_CLIENT_ID = '33VURKPUNBBI0QJRWEHBTHFZ52QY2LLOCTLOB3IPL4CCXVO5'
 FOURSQUARE_CLIENT_SECRET = 'WNHPZXGRGBVFMCGKITWALUGHA2PUQQYPT55VKJ4JEXY2JJDU'
 FOURSQUARE_OAUTH_AUTHORIZE_URL = 'https://foursquare.com/oauth2/authenticate'
@@ -99,7 +100,7 @@ LASTFM_API_URL = 'http://ws.audioscrobbler.com/2.0/'
 LASTFM_API_KEY = '[ENTER LASTFM API_KEY HERE, SEE LASTFM SETUP INSTRUCTIONS]'
 
 #SoundCloud Integration
-SOUNDCLOUD_INTEGRATION_ENABLED = True
+SOUNDCLOUD_INTEGRATION_ENABLED = False
 SOUNDCLOUD_API_URL = 'https://api.soundcloud.com/'
 SOUNDCLOUD_CLIENT_ID = 'ae5c074982efe8661cba4c461047cadd'
 SOUNDCLOUD_SHOW_ARTWORK = False
@@ -130,7 +131,7 @@ if DEPLOYMENT_MODE == 'dev':
     SITE_ROOT_URI = 'http://127.0.0.1:8000/'
     DEBUG = True
 else:
-    DEBUG = False
+    DEBUG = True
     SITE_ROOT_URI = 'http://limitless-island-2628.herokuapp.com/'
 
 MEDIA_URL = SITE_ROOT_URI + 'static/'
