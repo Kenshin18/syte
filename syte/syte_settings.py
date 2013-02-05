@@ -2,7 +2,7 @@
 DEPLOYMENT_MODE = 'prod'
 COMPRESS_REVISION_NUMBER = '1.1'
 
-BLOG_PLATFORM = 'Wordpress'  # Wordpress or tumblr
+BLOG_PLATFORM = 'wordpress'  # Wordpress or tumblr
 
 #Blog Integration: Tumblr
 TUMBLR_BLOG_URL = '[ENTER TUMBLR BLOG URL] ex. rigoneri.tumblr.com'
