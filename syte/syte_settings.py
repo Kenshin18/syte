@@ -11,7 +11,7 @@ TUMBLR_API_KEY = '[ENTER TUMBLR API KEY HERE, SEE TUMBLR SETUP INSTRUCTIONS]'
 
 #Blog Integration: Wordpress
 WORDPRESS_BLOG_URL = 'greenthe.me'
-WORDPRESS_API_URL = 'https://public-api.wordpress.com/rest/v1/sites/grenthe.me'
+WORDPRESS_API_URL = 'https://public-api.wordpress.com/rest/v1/sites/greenthe.me'
 #.format(WORDPRESS_BLOG_URL)
 
 #RSS Feed Integration: (by default use Tumblr rss feed)
